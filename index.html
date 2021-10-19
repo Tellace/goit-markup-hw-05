@@ -72,7 +72,7 @@
 
           <div class="button">
             <button class="hero-btn btn container-btn" type="button">
-              <span class="btn-text">Заказать услугу</span>
+              <span class="btn-text" data-modal-open>Заказать услугу</span>
             </button>
           </div>
         </div>
@@ -489,7 +489,6 @@
                 <a href="https://www.linkedin.com/" class="footer-social">
                   <svg class="footer-social-icon">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
-                    >
                   </svg>
                 </a>
               </li>
@@ -498,5 +497,15 @@
         </div>
       </footer>
     </main>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
